@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Zadatak</title>
+        <style>
+            .circle {
+                width: 300px;
+                height: 300px;
+                margin: 200px auto;
+                border-radius: 100%;
+                background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+
+                box-shadow: 0 0 40px white;
+
+                animation-name: krug;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            @keyframes krug {
+                from{
+                    rotate: 0feg;
+                }to{
+                    rotate: 360deg;
+                }
+            }
+
+            body {
+                background-color: #050210;
+            }
+
+            #circle-2 {
+                position: absolute;
+                width: 260px;
+                height: 260px;
+                margin: 20px;
+                border-radius: 100%;
+                background: #050210;
+
+                animation-name: krug-1;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+
+            }
+
+            
+            
+           @keyframes krug-1 {
+                0% {
+                    background: radial-gradient(#050210C9 0%, #050210 20%);
+
+                }
+                20% {
+                    background: radial-gradient(#050210C9  20%, #050210 32%);
+                }
+                40% {
+                    background: radial-gradient(#050210C9 32%, #050210 44%);
+                }
+                60% {
+                    background: radial-gradient(#050210C9 44%, #050210 56%);
+                }
+                80% {
+                    background: radial-gradient(#050210C9 56%, #050210 70%);
+                }
+                100% {
+                    background: radial-gradient(#050210C9 70%, #050210);
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="circle" id="circle-1">
+            <div id="circle-2"></div>
+        </div>
+    </body>
+</html>
