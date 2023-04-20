@@ -59,10 +59,26 @@
                 border-radius: 100%;
                 background: #050210;
 
+                /*animation-name: krug-1;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;*/
+
+            }
+
+            #circle-3 {
+                position: absolute;
+                width: 260px;
+                height: 260px;
+                margin: 0 auto;
+                border-radius: 100%;
+                background: rgb(7, 7, 7);
+
                 animation-name: krug-1;
                 animation-duration: 1s;
                 animation-timing-function: linear;
                 animation-iteration-count: infinite;
+
 
             }
 
@@ -77,11 +93,11 @@
                 }
                 20% {
                     transform: scale(0.2, 0.2);
-                    filter: opacity(0.8);
+                    filter: opacity(0.6);
                 }
                 40% {
                     transform: scale(0.4, 0.4);
-                    filter: opacity(0.8);
+                    filter: opacity(0.6);
                 }
                 60% {
                     transform: scale(0.6, 0.6);
@@ -101,7 +117,8 @@
     </head>
     <body>
         <div class="circle" id="circle-1">
-        <div id="circle-2">
+        <div  id="circle-2">
+            <div  id="circle-3"></div>
         </div>
         </div>
         
