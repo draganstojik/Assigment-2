@@ -27,7 +27,16 @@
                 
             
             .circle::before {
-                filter: blur(300px);
+                position: absolute;
+                content: '';
+                filter: blur(50px);
+                width: 300px;
+                height: 300px;
+                background-color: white;
+                border-radius: 100%;
+                
+                margin: 0 auto;
+                
             }
 
             @keyframes krug {
