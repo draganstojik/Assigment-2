@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Gradients</title>
+        <style>
+            .box {
+                width: 250px;
+                height: 250px;
+                margin: 100px auto;
+                border-radius: 100%;
+                animation-name: krug;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                
+
+                
+
+            }
+
+            #box-1 {
+                background: linear-gradient(red, blue);
+                box-shadow: inset 0 0 5px 20px  white;
+                transform-style: preserve-3d;
+            }
+            #box-1:hover {
+                animation-play-state: paused;
+                cursor: pointer;
+            }
+
+            /*#box-1::before { 
+                position: absolute;
+                content: '';
+                left: 125px;
+                width: 20px;
+                height: 20px;
+                border-left: 10px solid black;
+                border-radius: 100%;
+
+            }*/
+
+            @keyframes krug {
+                from {
+                    rotate: 0deg;
+                }
+                to {
+                    rotate: 360deg;
+                }
+
+
+            }
+            body {
+                background-color: gray;
+            }
+
+            #box-2 {
+               
+                width: 210px;
+                height: 210px;
+                
+                
+                border-radius: 100%;
+                background: linear-gradient(yellow, green, gray);
+                
+                animation-name: krug;
+                animation-duration: 3s;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box" id="box-1">
+            <div id="box-2"></div>
+        </div>
+    </body>
+</html>
